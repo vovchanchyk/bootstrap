@@ -4,48 +4,20 @@
 .header{
     background-image: url(./img/BG.png);
     min-height: 73px;
-    margin: 0px;
-    padding: 0px;
 }
 
-.header__title{
-    display: flex;
-    align-items: center;
-    vertical-align: middle;
-    margin-left: 9px;
 
-}
-.navbar-brand{
-    margin-right: 0px;
-    
-}
+
 .dropdown-item:focus, .dropdown-item:hover {
     color: #16181b;
     text-decoration: none;
     background-color: transparent;
 }
 
-.nav-link{
-    padding:  8px 0;
-}
-.dropdown-toggle{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 5px;
-    
-}
-.dropdown-menu{
-   padding-top: 0;
-}
-.user{
-    padding-left: 0;
-     padding-right:0;
-}
-.administrator{
-    padding: 15px;
-    margin: 0;
-}
+
+
+
+
 .administrator__btn::before{
     content: '\f2f6';
     padding-right: 5px;
@@ -77,18 +49,16 @@ small{
     overflow:hidden;
     text-overflow:ellipsis; 
 }
-.massage{
+.students__user .message{
     width: calc(100% - 85px);
    
 }
-.students{
-    margin: 0;
-    padding: 15px;
-}
+
 
 .students__user{
     min-height: 92px;
-    height: auto;
+    
+   
 }
 .arrow{
 color:gray;
@@ -112,16 +82,26 @@ width: 55px;
     font-size: 30px;
 }
 .user__sublist-item{
-    padding-left: 66px;
+   
+    padding-left: 16px; 
     height: 56px;
+    @media screen and(min-width:764px) {
+        padding-left: 66px;  
+    }
 }
 li{
     list-style: none;
 }
 
-.message{
-    flex-wrap: nowrap;
-}
+
 .footer{
     background-image: url(./img/_footer.png);
+}
+
+@media screen and (min-width:988px){
+    ul{
+        
+        
+        max-height: 194px;
+    }
 }

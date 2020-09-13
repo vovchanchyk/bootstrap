@@ -17,7 +17,11 @@ $(".dropdown-menu .dropdown-toggle").on("click", function(event) {
    })
    
    
-   $('.arrow').on('click', function () {
-     $(this).toggleClass('rotate')
+//    $('.arrow').on('click', function () {
+//      $(this).toggleClass('rotate')
      
-   })
+//    })
+
+$('.arrow').on('click',function () {
+  $(this).closest('.row').find('[data-toggle]').toggleClass('rotate')
+})
